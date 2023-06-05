@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../lib/ckeditor/ckeditor.js"></script>
+    <script src="../node_modules/duice/dist/duice.js"></script>
+    <script src="../dist/duice-plugin.js"></script>
+    <script>
+        'use strict';
+        const myObject = new duice.ObjectProxy({
+            content: 'Content'
+        });
+
+    </script>
+</head>
+<body>
+
+<duice-ckeditor data-duice-bind="myObject" data-duice-property="content"/>
+
+
+</body>
+</html>
+
+
+
+
+
+

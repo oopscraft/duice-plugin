@@ -1,2 +1,1 @@
-# duice-plugin
-duice-plugin
+# DUICE (Data oriented UI Control Element) Plugin
