@@ -33,6 +33,8 @@ namespace duice.plugin {
                     return preview.innerHTML;
                 },
                 tabSize: 4,
+                status: false,
+                hideIcons: ['fullscreen','side-by-side'],
                 renderingConfig: {
                     insertTexts: {
                         horizontalRule: ["", "\n\n-----\n\n"],
@@ -58,15 +60,18 @@ namespace duice.plugin {
          * @param value
          */
         override setValue(value: any): void {
+            if(!value) {
+                value = '';
+            }
             // checks value is changed
             if(value !== this.simpleMde.value()){
                 // sets value
                 this.simpleMde.value(value);
                 // Fixes CodeMirror bug (#344) - refresh not working after value changed.
-                let codemirror = this.simpleMde.codemirror;
-                setTimeout(function() {
-                    codemirror.refresh();
-                }.bind(codemirror), 0);
+                // let codemirror = this.simpleMde.codemirror;
+                // setTimeout(function() {
+                //     codemirror.refresh();
+                // }.bind(codemirror), 0);
             }
         }
 

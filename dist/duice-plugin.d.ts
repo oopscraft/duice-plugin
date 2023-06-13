@@ -14,6 +14,17 @@ declare namespace duice.plugin {
         getValue(): any;
     }
 }
+declare namespace duice.plugin {
+    class CkeditorFactory extends ObjectElementFactory<HTMLElement> {
+        /**
+         * create element
+         * @param htmlElement
+         * @param bindData
+         * @param context
+         */
+        doCreateElement(htmlElement: HTMLElement, bindData: object, context: object): Ckeditor;
+    }
+}
 declare var SimpleMDE: any;
 declare var marked: any;
 declare var Prism: any;
@@ -27,6 +38,17 @@ declare namespace duice.plugin {
          * @param value
          */
         setValue(value: any): void;
+    }
+}
+declare namespace duice.plugin {
+    class MarkedFactory extends ObjectElementFactory<HTMLElement> {
+        /**
+         * create element
+         * @param htmlElement
+         * @param bindData
+         * @param context
+         */
+        doCreateElement(htmlElement: HTMLElement, bindData: object, context: object): Marked;
     }
 }
 declare var SimpleMDE: any;
@@ -48,17 +70,6 @@ declare namespace duice.plugin {
     }
 }
 declare namespace duice.plugin {
-    class CkeditorFactory extends ObjectElementFactory<HTMLElement> {
-        /**
-         * create element
-         * @param htmlElement
-         * @param bindData
-         * @param context
-         */
-        doCreateElement(htmlElement: HTMLElement, bindData: object, context: object): Ckeditor;
-    }
-}
-declare namespace duice.plugin {
     class SimplemdeFactory extends ObjectElementFactory<HTMLElement> {
         /**
          * create element
@@ -67,17 +78,6 @@ declare namespace duice.plugin {
          * @param context
          */
         doCreateElement(htmlElement: HTMLElement, bindData: object, context: object): Simplemde;
-    }
-}
-declare namespace duice.plugin {
-    class MarkedFactory extends ObjectElementFactory<HTMLElement> {
-        /**
-         * create element
-         * @param htmlElement
-         * @param bindData
-         * @param context
-         */
-        doCreateElement(htmlElement: HTMLElement, bindData: object, context: object): Marked;
     }
 }
 declare namespace duice.plugin {
