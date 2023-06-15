@@ -20,7 +20,8 @@ namespace duice.plugin {
             // config
             this.config = {
                 headerIds: false,
-                mangle: false
+                mangle: false,
+                breaks: true
             }
         }
 
