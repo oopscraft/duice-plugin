@@ -1,6 +1,6 @@
 {
   "name": "duice-extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "DUICE(Data-oriented javascript UI Component Element) Extension",
   "homepage": "http://duice-extension.oopscraft.org",
   "author": "chomookun@gmail.com",
