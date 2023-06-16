@@ -1,3 +1,5 @@
+declare namespace duice.extension {
+}
 declare var CodeMirror: any;
 declare namespace duice.extension {
     class MarkdownEditor extends duice.ObjectElement<HTMLElement> {
@@ -73,34 +75,4 @@ declare namespace duice.extension {
         doUpdate(object: object): void;
         doStyle(object: object): string;
     }
-}
-declare namespace duice.extension {
-    class SideNavigation extends duice.CustomElement<object[]> {
-        idProperty: string;
-        parentIdProperty: string;
-        iconProperty: string;
-        textProperty: string;
-        onclick: string;
-        uls: HTMLUListElement[];
-        /**
-         * doReader
-         * @param array
-         */
-        doRender(array: object[]): HTMLElement;
-        /**
-         * array to tree ul
-         * @param array
-         * @param parentId
-         * @param depth
-         */
-        arrayToTreeUl(array: any, parentId: any, depth: any): HTMLUListElement;
-        doUpdate(data: object[]): void;
-        /**
-         * doStyle
-         * @param array
-         */
-        doStyle(array: object[]): string;
-    }
-}
-declare namespace duice.extension {
 }
