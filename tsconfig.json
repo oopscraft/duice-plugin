@@ -3,7 +3,7 @@
     "sourceRoot": "src",
     "rootDirs": ["./"],
     "target": "es6",
-    "outFile": "dist/duice-plugin.js",
+    "outFile": "dist/duice-extension.js",
     "sourceMap": true,
     "declaration": true,
     "noImplicitOverride": true,
