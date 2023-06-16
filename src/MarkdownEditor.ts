@@ -21,6 +21,7 @@ namespace duice.extension {
             // config
             let config = {
                 mode: 'markdown',
+                inputStyle: 'textarea',
                 lineNumbers: true,
                 theme: "default",
                 extraKeys: {"Enter": "newlineAndIndentContinueMarkdownList"}
@@ -32,6 +33,7 @@ namespace duice.extension {
 
             // create code mirror
             this.codeMirror = CodeMirror.fromTextArea(textarea, config);
+            this.codeMirror.setSize('100%','100%');
 
             // add change event listener
             this.codeMirror.on("blur",() => {

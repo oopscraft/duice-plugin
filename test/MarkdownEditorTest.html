@@ -6,11 +6,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <link rel="stylesheet" type="text/css" href="../lib/codemirror/codemirror.css">
     <script src="../lib/codemirror/codemirror.js"></script>
-    <script src="../lib/codemirror/addon/mode/overlay.js"></script>
-    <script src="../lib/codemirror/mode/gfm/gfm.js"></script>
     <script src="../lib/codemirror/mode/markdown/markdown.js"></script>
     <script src="../node_modules/duice/dist/duice.js"></script>
-    <script src="../dist/duice-plugin.js"></script>
+    <script src="../dist/duice-extension.js"></script>
     <script>
         'use strict';
         const myObject = new duice.ObjectProxy({
@@ -20,7 +18,7 @@
 </head>
 <body>
 
-<duice-markdown-editor data-duice-bind="myObject" data-duice-property="content"/>
+<duice-markdown-editor data-duice-bind="myObject" data-duice-property="content" style="border: solid 1px black; width:400px; height:400px;"/>
 
 </body>
 </html>
