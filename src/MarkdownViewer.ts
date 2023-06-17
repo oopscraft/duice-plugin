@@ -27,7 +27,8 @@ namespace duice.extension {
             this.config = {
                 headerIds: false,
                 mangle: false,
-                breaks: true
+                breaks: true,
+                gfm: true
             }
         }
 
